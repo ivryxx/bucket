@@ -107,8 +107,8 @@
                                           </li>`
                         } else  {
                             temp_html = `<li>
-                                            <h2 class="done">✅ ${bucket}</h2>
-                                            <button onclick="=cancel_bucket(${num})" type="button" class="btn btn-outline-danger">취소</button>
+                                               <h2 class="done">✅ ${bucket}</h2>
+                                               <button onclick="cancel_bucket(${num})" type="button" class="btn btn-outline-danger">취소</button>
                                             </li>`
                         }
                         $('#bucket-list').append(temp_html)
@@ -150,8 +150,8 @@
                 success: function (response) {
                     alert(response["msg"])
                     window.location.reload()
-                }
-            });
+                            }
+                        });
         }
 
     </script>
